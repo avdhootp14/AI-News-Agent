@@ -1,0 +1,43 @@
+email:
+  recipients:
+  - email: avdhoot144@gmail.com
+    name: Avdhoot Pimparkar
+  smtp:
+    port: 587
+    server: smtp.gmail.com
+    use_tls: true
+  template:
+    sender_name: AI News Agent
+    subject_prefix: Daily AI News Digest
+gemini:
+  max_tokens: 150
+  model: gemini-2.0-flash
+  retry_attempts: 3
+  retry_delay: 5
+  temperature: 0.3
+logging:
+  backup_count: 5
+  file: logs/ai_news_agent.log
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  level: INFO
+  max_size: 10MB
+news_sources:
+- enabled: true
+  name: AI News
+  url: https://www.artificialintelligence-news.com/
+- enabled: true
+  name: The Verge AI
+  url: https://www.theverge.com/ai-artificial-intelligence
+- enabled: true
+  name: TechCrunch AI
+  url: https://techcrunch.com/category/artificial-intelligence/
+scheduling:
+  daily_time: 08:00
+  enabled: true
+  timezone: UTC
+scraping:
+  hours_lookback: 24
+  max_articles: 5
+  rate_limit_delay: 2
+  timeout: 30
+  user_agent: AI-News-Agent/1.0

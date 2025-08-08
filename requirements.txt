@@ -1,0 +1,24 @@
+# Core Dependencies
+google-generativeai>=0.3.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+lxml>=4.9.0
+PyYAML>=6.0
+python-dotenv>=1.0.0
+
+# Email Dependencies
+sendgrid>=6.10.0
+
+# Scheduling Dependencies
+schedule>=1.2.0
+pytz>=2023.3
+
+# Web Scraping (if needed for dynamic content)
+selenium>=4.15.0
+playwright>=1.40.0
+
+# Development Dependencies
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.9.0
+flake8>=6.1.0

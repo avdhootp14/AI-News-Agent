@@ -67,8 +67,8 @@ def prompt_for_api_key():
             with open(env_file, 'r') as f:
                 content = f.read()
             
-            # Replace the placeholder
-            content = content.replace('AIzaSyAWlllKjztkeHSCZE0JowcxFFbbEZ3nAR4', api_key)
+         
+            content = content.replace('GOOGLE_API_KEY_HERE', api_key)
             
             with open(env_file, 'w') as f:
                 f.write(content)

@@ -41,6 +41,12 @@ logs/
 *.swp
 *.swo
 
+# Config files (sensitive)
+config.yaml
+config/*.yaml
+*.backup
+temp/
+
 # OS
 .DS_Store
 Thumbs.db

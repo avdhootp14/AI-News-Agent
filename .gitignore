@@ -42,7 +42,7 @@ logs/
 *.swo
 
 # Config files (sensitive)
-config.yaml
+config/config.yaml
 config/*.yaml
 *.backup
 temp/
